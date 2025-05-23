@@ -21,3 +21,8 @@ def decrypt():
     key = int(data['key'])
     decrypted_text = railfence_cipher.rail_fence_decrypt(cipher_text, key)
     return jsonify({'decrypted_text': decrypted_text})
+
+# main function
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000, debug=True)
+    
