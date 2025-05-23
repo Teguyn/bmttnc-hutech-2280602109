@@ -22,3 +22,7 @@ def vigenere_decrypt():
     decrypted_text = vigenere_cipher.vigenere_decrypt(cipher_text, key)
     return jsonify({'decrypted_text': decrypted_text})
 
+# main function
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000, debug=True)
+    
