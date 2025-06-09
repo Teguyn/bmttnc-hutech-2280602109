@@ -1,1 +1,1 @@
-from .playfair_cipher import PlayfairCipher
+from .Transipost_cipher import TranspositionCipher
