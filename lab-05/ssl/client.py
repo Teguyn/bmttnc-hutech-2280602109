@@ -17,7 +17,9 @@ def receive_data(ssl_socket):
         print("Ket noi da dong.")
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-context = ssl.SSLContext(ssl.PROTOCOL_TLS)
+context = ssl.SSLContext(ssl.PROTOCOL_TLS_CLIENT)
+context.check_hostname = False
+
 context.verify_mode =ssl.CERT_NONE
 context.check_hostname = False
 

@@ -39,7 +39,7 @@ print("server dang cho ket noi...")
 
 while True:
     client_socket,client_address = server_socket.accept()
-    context = ssl.SSLContext(ssl.PROTOCOL_TLS)
+    context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
     context.load_cert_chain(certfile="./certificates/server-cert.crt",
     keyfile="./certificates/server-key.key")
     
